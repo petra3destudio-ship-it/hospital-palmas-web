@@ -1,0 +1,16 @@
+.directory-section { background: #eef1ef; scroll-margin-top: 115px; }
+.directory-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.doctor-card { overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--paper); display: flex; flex-direction: column; }
+.doctor-portrait { position: relative; aspect-ratio: 5 / 4; display: grid; place-items: center; background: #dde5e5; overflow: hidden; }
+.doctor-placeholder { font: 2.8rem Georgia, serif; color: var(--petrol); }
+.doctor-portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
+.doctor-details { padding: 26px; display: flex; flex-direction: column; gap: 12px; flex: 1; overflow-wrap: anywhere; }
+.doctor-details .eyebrow { letter-spacing: .1em; }
+.doctor-license, .doctor-assistant { font-size: .85rem; }
+.doctor-details .button { margin-top: auto; text-align: center; }
+.directory-empty { max-width: 760px; padding: clamp(24px, 4vw, 40px); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--paper); }
+.directory-empty h3 { margin-top: 12px; }
+.directory-empty > p:not(.eyebrow) { margin-top: 16px; }
+.directory-empty .button { margin-top: 24px; }
+@media (max-width: 980px) { .directory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 720px) { .directory-grid { grid-template-columns: 1fr; } }

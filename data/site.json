@@ -1,0 +1,40 @@
+{
+  "brand": {
+    "name": "Hospital Palmas",
+    "city": "Cuernavaca",
+    "state": "Morelos",
+    "tagline": "Atención médica con confianza, privacidad y trato humano."
+  },
+  "contact": {
+    "phones": [
+      {
+        "label": "Teléfono principal",
+        "display": "777 314 0974",
+        "e164": "+527773140974"
+      },
+      {
+        "label": "Teléfono alterno",
+        "display": "777 312 3534",
+        "e164": "+527773123534"
+      }
+    ],
+    "whatsapp": {
+      "display": "777 314 0974",
+      "url": "https://wa.me/527773140974?text=Hola%2C%20quisiera%20solicitar%20informaci%C3%B3n%20en%20Hospital%20Palmas.",
+      "note": "CONFIRMAR con Hospital Palmas que este número recibe WhatsApp antes de publicar."
+    }
+  },
+  "location": {
+    "display": "94 Blvd. Lic. Benito Juárez, Cuernavaca, Morelos",
+    "mapsUrl": "https://share.google/wZBZdM2OzebrpD4pE",
+    "note": "La captura de Street View adjunta por el cliente muestra el número 94. Confirmar domicilio fiscal/oficial antes de producción."
+  },
+  "hours": {
+    "display": "Servicio 24 horas",
+    "note": "Texto visible en la fachada. Confirmar alcance exacto del servicio antes de publicación final."
+  },
+  "contentNotes": [
+    "Los nombres de servicios son un wireframe editorial y deben validarse con el hospital.",
+    "No publicar especialidades, aseguradoras, procedimientos o promesas clínicas sin aprobación del Dr. Campos."
+  ]
+}

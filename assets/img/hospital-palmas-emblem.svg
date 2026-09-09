@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="520" height="520" viewBox="440 70 520 520"
+     role="img" aria-labelledby="title desc">
+  <title id="title">Hospital Palmas</title>
+  <desc id="desc">Vector reconstruction of the Hospital Palmas logo from the supplied reference image.</desc>
+
+  <g fill="none" stroke="#173F7A" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer circle -->
+    <circle cx="700" cy="330" r="245" stroke-width="13"/>
+
+    <!-- ECG / heartbeat line -->
+    <path d="
+      M 455 330
+      L 500 330
+      L 515 300
+      L 532 362
+      L 550 318
+      L 565 330
+      L 640 330
+      M 760 330
+      L 835 330
+      L 850 304
+      L 868 360
+      L 886 316
+      L 902 330
+      L 945 330"
+      stroke-width="12"/>
+  </g>
+
+  <!-- Central H -->
+  <g fill="#173F7A">
+    <!-- Left vertical with serif -->
+    <path d="
+      M 585 208
+      C 585 191, 570 184, 545 181
+      L 545 171
+      L 655 171
+      L 655 181
+      C 630 184, 616 191, 616 208
+      L 616 452
+      C 616 469, 630 476, 655 479
+      L 655 489
+      L 545 489
+      L 545 479
+      C 570 476, 585 469, 585 452
+      Z"/>
+    <!-- Right vertical with serif -->
+    <path d="
+      M 784 208
+      C 784 191, 769 184, 744 181
+      L 744 171
+      L 854 171
+      L 854 181
+      C 829 184, 815 191, 815 208
+      L 815 452
+      C 815 469, 829 476, 854 479
+      L 854 489
+      L 744 489
+      L 744 479
+      C 769 476, 784 469, 784 452
+      Z"/>
+    <!-- Stylized central cross connection -->
+    <path d="
+      M 616 330
+      C 660 330, 676 322, 690 301
+      C 704 280, 717 268, 744 268
+      L 744 320
+      C 722 320, 712 329, 701 343
+      C 685 364, 666 371, 616 371
+      Z"/>
+  </g>
+
+</svg>
