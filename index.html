@@ -6,14 +6,24 @@
   <meta name="theme-color" content="#f7f7f3">
   <meta name="description" content="Hospital Palmas en Cuernavaca, Morelos. Atención hospitalaria con confianza, privacidad y trato humano.">
   <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <title>Hospital Palmas | Cuernavaca, Morelos</title>
 
   <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="preload" href="./assets/img/hero-hospital-palmas.webp" as="image" type="image/webp" fetchpriority="high">
-  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="preload" href="./assets/img/hero-hospital-palmas-fast.webp" media="(min-width: 721px)" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="./assets/img/hero-hospital-palmas-mobile-fast.webp" media="(max-width: 720px)" as="image" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="./assets/css/modules/tokens.css">
+  <link rel="stylesheet" href="./assets/css/modules/reset.css">
+  <link rel="stylesheet" href="./assets/css/modules/base.css">
+  <link rel="stylesheet" href="./assets/css/modules/header.css">
+  <link rel="stylesheet" href="./assets/css/modules/hero.css">
+  <link rel="stylesheet" href="./assets/css/modules/components.css">
+  <link rel="stylesheet" href="./assets/css/modules/sections.css">
+  <link rel="stylesheet" href="./assets/css/modules/directory.css">
+  <link rel="stylesheet" href="./assets/css/modules/responsive.css">
 
   <script type="application/ld+json">
   {
@@ -37,7 +47,7 @@
   <header class="site-header" data-header>
     <div class="shell header-inner glass">
       <a class="brand" href="#inicio" aria-label="Hospital Palmas, inicio">
-        <span class="brand-emblem" aria-hidden="true"><img src="./assets/img/hospital-palmas-logo.png" alt="" width="1448" height="1086"></span>
+        <span class="brand-emblem" aria-hidden="true"><img src="./assets/img/hospital-palmas-logo.webp" alt="" width="640" height="480"></span>
         <span class="brand-copy">
           <strong>HOSPITAL PALMAS</strong>
           <small>Cuernavaca · Morelos</small>
@@ -63,14 +73,14 @@
   <main id="contenido">
     <section class="hero" id="inicio" aria-labelledby="hero-title">
       <picture class="hero-media" aria-hidden="true">
-        <source media="(max-width: 720px)" srcset="./assets/img/hero-hospital-palmas-mobile.webp" type="image/webp">
-        <source srcset="./assets/img/hero-hospital-palmas.webp" type="image/webp">
-        <img src="./assets/img/hero-hospital-palmas.webp" alt="" width="1672" height="941" fetchpriority="high" decoding="async">
+        <source media="(max-width: 720px)" srcset="./assets/img/hero-hospital-palmas-mobile-fast.webp" type="image/webp">
+        <source srcset="./assets/img/hero-hospital-palmas-fast.webp" type="image/webp">
+        <img src="./assets/img/hero-hospital-palmas-fast.webp" alt="" width="1672" height="941" fetchpriority="high" decoding="async">
       </picture>
       <div class="hero-scrim"></div>
 
       <div class="shell hero-content">
-        <div class="hero-card glass glass--hero" data-reveal>
+        <div class="hero-card glass glass--hero">
           <p class="eyebrow">Hospital Palmas · Cuernavaca, Morelos</p>
           <h1 id="hero-title">Hospital de <em>alta especialidad.</em></h1>
           <p class="hero-lead">Infraestructura especializada y atención humana para acompañarle cuando más lo necesita.</p>
@@ -201,7 +211,7 @@
     <section class="section" id="instalaciones" aria-labelledby="facilities-title">
       <div class="shell facilities-layout">
         <div class="facilities-visual" data-reveal>
-          <img src="./assets/img/hero-hospital-palmas.webp" alt="Fachada de Hospital Palmas en Cuernavaca" loading="lazy" width="1672" height="941">
+          <img src="./assets/img/hero-hospital-palmas-fast.webp" alt="Fachada de Hospital Palmas en Cuernavaca" loading="lazy" width="1672" height="941">
           <div class="floating-note glass"><span>Hospital Palmas</span><strong>Presencia, orden y privacidad.</strong></div>
         </div>
         <div class="facilities-copy" data-reveal>
@@ -230,7 +240,7 @@
           <a class="button button--primary" href="https://share.google/wZBZdM2OzebrpD4pE" target="_blank" rel="noopener" data-map-link>Abrir ruta en Google Maps</a>
         </div>
         <div class="map-frame" data-reveal>
-          <iframe title="Mapa de Hospital Palmas en Cuernavaca" src="https://www.google.com/maps?q=94%20Blvd.%20Lic.%20Benito%20Ju%C3%A1rez%2C%20Cuernavaca%2C%20Morelos&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <iframe title="Mapa de Hospital Palmas en Cuernavaca" data-map-src="https://www.google.com/maps?q=94%20Blvd.%20Lic.%20Benito%20Ju%C3%A1rez%2C%20Cuernavaca%2C%20Morelos&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         </div>
       </div>
     </section>
@@ -253,7 +263,7 @@
   <footer class="site-footer">
     <div class="shell footer-grid">
       <div>
-        <a class="brand brand--footer" href="#inicio" aria-label="Hospital Palmas, inicio"><img class="brand-logo" src="./assets/img/hospital-palmas-logo.png" alt="Hospital Palmas — Atención médica con sentido humano" width="1448" height="1086" loading="lazy"></a>
+        <a class="brand brand--footer" href="#inicio" aria-label="Hospital Palmas, inicio"><img class="brand-logo" src="./assets/img/hospital-palmas-logo.webp" alt="Hospital Palmas — Atención médica con sentido humano" width="640" height="480" loading="lazy"></a>
         <p>Atención médica con confianza, privacidad y trato humano.</p>
       </div>
       <div><strong>Contacto</strong><a href="tel:+527773140974" data-phone-link data-phone-display>777 314 0974</a><a href="https://share.google/wZBZdM2OzebrpD4pE" target="_blank" rel="noopener" data-map-link>Cómo llegar</a></div>
