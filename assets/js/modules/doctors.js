@@ -1,3 +1,5 @@
+import { loadDoctors } from './doctors-data.js';
+
 const textElement = (tag, text, className) => {
   const element = document.createElement(tag);
   element.textContent = text;
@@ -5,6 +7,14 @@ const textElement = (tag, text, className) => {
   return element;
 };
 const hasText = (value) => typeof value === 'string' && value.trim().length > 0;
+const allowedPhoto = (value) => {
+  if (!hasText(value)) return false;
+  if (/^\.\/assets\/img\/[\w/.-]+\.(webp|png|jpe?g)$/i.test(value) && !value.includes('..')) return true;
+  try {
+    const url = new URL(value);
+    return url.protocol === 'https:' && !url.username && !url.password;
+  } catch { return false; }
+};
 
 function doctorCard(doctor) {
   const card = document.createElement('article');
@@ -12,12 +22,21 @@ function doctorCard(doctor) {
   const portrait = document.createElement('div');
   portrait.className = 'doctor-portrait';
   portrait.setAttribute('aria-hidden', 'true');
-  portrait.append(textElement('span', 'HP', 'doctor-placeholder'));
-  // Portraits are local assets; no arbitrary external URLs are accepted.
-  if (hasText(doctor.photo) && /^\.\/assets\/img\/[\w/.-]+\.(webp|png|jpe?g)$/i.test(doctor.photo) && !doctor.photo.includes('..')) {
+  const placeholder = document.createElement('img');
+  placeholder.className = 'doctor-placeholder';
+  placeholder.src = './assets/img/icons/specialists.svg';
+  placeholder.alt = '';
+  placeholder.width = 128;
+  placeholder.height = 128;
+  placeholder.loading = 'lazy';
+  portrait.append(placeholder);
+  if (allowedPhoto(doctor.photo)) {
     const photo = document.createElement('img');
+    photo.className = 'doctor-photo';
     photo.alt = '';
     photo.loading = 'lazy';
+    photo.decoding = 'async';
+    photo.referrerPolicy = 'no-referrer';
     photo.width = 600;
     photo.height = 480;
     photo.addEventListener('error', () => photo.remove(), { once: true });
@@ -28,6 +47,9 @@ function doctorCard(doctor) {
   details.className = 'doctor-details';
   details.append(textElement('p', doctor.specialty, 'eyebrow'));
   details.append(textElement('h3', doctor.name));
+  if (doctor.photoIllustrative === true) {
+    details.append(textElement('p', 'Fotografía ilustrativa', 'doctor-license'));
+  }
   details.append(textElement('p', `Cédula profesional: ${doctor.license}`, 'doctor-license'));
   if (hasText(doctor.specialtyLicense)) {
     details.append(textElement('p', `Cédula de especialidad: ${doctor.specialtyLicense}`, 'doctor-license'));
@@ -55,10 +77,7 @@ export async function initDoctors() {
   const status = document.querySelector('[data-directory-status]');
   if (!list || !status) return;
   try {
-    const response = await fetch('./data/doctors.json', { cache: 'no-store' });
-    if (!response.ok) throw new Error(`doctors.json: ${response.status}`);
-    const doctors = await response.json();
-    if (!Array.isArray(doctors)) throw new Error('Invalid directory format');
+    const doctors = await loadDoctors();
     const published = doctors.filter((doctor) => doctor && doctor.published === true &&
       hasText(doctor.name) && hasText(doctor.specialty) && hasText(doctor.license));
     list.replaceChildren(...published.map(doctorCard));

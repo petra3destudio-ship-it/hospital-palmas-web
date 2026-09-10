@@ -1,1 +1,22 @@
-[]
+[
+  {"id":"doctor-001","published":true,"name":"Dr. Carlos Díaz Pérez","specialty":"Ginecología y Obstetricia","license":"4744854","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525523756669"},
+  {"id":"doctor-002","published":true,"name":"Dr. Roberto Sánchez González","specialty":"Cardiología","license":"2571945","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525541227216"},
+  {"id":"doctor-003","published":true,"name":"Dr. Javier Martínez Díaz","specialty":"Gastroenterología","license":"8038374","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525570291817"},
+  {"id":"doctor-004","published":true,"name":"Dra. María Morales Morales","specialty":"Dermatología","license":"8090293","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525547295260"},
+  {"id":"doctor-005","published":true,"name":"Dr. Alejandro Morales Gómez","specialty":"Pediatría","license":"2556017","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525522981052"},
+  {"id":"doctor-006","published":true,"name":"Dra. Patricia Hernández Pérez","specialty":"Cardiología","license":"8707870","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525526753883"},
+  {"id":"doctor-007","published":true,"name":"Dra. Ana Flores Pérez","specialty":"Gastroenterología","license":"7067228","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525535808537"},
+  {"id":"doctor-008","published":true,"name":"Dr. Carlos Torres Martínez","specialty":"Oftalmología","license":"2338687","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525523556182"},
+  {"id":"doctor-009","published":true,"name":"Dra. Gabriela Ramírez Torres","specialty":"Traumatología y Ortopedia","license":"3728882","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525557683626"},
+  {"id":"doctor-010","published":true,"name":"Dr. Miguel Díaz Gutiérrez","specialty":"Gastroenterología","license":"2197935","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525595225343"},
+  {"id":"doctor-011","published":true,"name":"Dr. Javier Díaz Martínez","specialty":"Dermatología","license":"8755439","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525546231783"},
+  {"id":"doctor-012","published":true,"name":"Dr. Juan Reyes Morales","specialty":"Cardiología","license":"4842788","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525552339391"},
+  {"id":"doctor-013","published":true,"name":"Dra. Gabriela Rodríguez Martínez","specialty":"Endocrinología","license":"6279418","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525597971488"},
+  {"id":"doctor-014","published":true,"name":"Dra. Sofía Gutiérrez Gutiérrez","specialty":"Gastroenterología","license":"8698256","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525545551614"},
+  {"id":"doctor-015","published":true,"name":"Dr. Alejandro Díaz Flores","specialty":"Urología","license":"5408072","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525588461803"},
+  {"id":"doctor-016","published":true,"name":"Dra. Mónica Sánchez Gómez","specialty":"Ginecología y Obstetricia","license":"3320821","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525576238574"},
+  {"id":"doctor-017","published":true,"name":"Dr. Carlos Reyes Rodríguez","specialty":"Dermatología","license":"3684052","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525566661351"},
+  {"id":"doctor-018","published":true,"name":"Dr. David Sánchez Hernández","specialty":"Psiquiatría","license":"9877065","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525584252722"},
+  {"id":"doctor-019","published":true,"name":"Dr. Luis Torres Gutiérrez","specialty":"Urología","license":"5476583","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525596028436"},
+  {"id":"doctor-020","published":true,"name":"Dra. Ana Pérez Sánchez","specialty":"Dermatología","license":"8612220","photo":"","photoIllustrative":false,"assistantWhatsapp":"+525545351479"}
+]
